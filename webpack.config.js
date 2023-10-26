@@ -1,24 +1,30 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   entry: {
-    index: './src/index.js',
-    // print: './src/print.js', // if we adding our 'src/print.js' as a new entry point
+    index: "./src/index.js",
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   devServer: {
-    static: './dist',
+    static: "./dist",
   },
-  plugins: [new HtmlWebpackPlugin({ title: 'Website Title' })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Backend Dev | Hoang Minh",
+      filename: "index.html",
+      template: "src/template.html",
+      // favicon: 'src/assets/icon/icon.png',
+    }),
+  ],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    // clean: true,
   },
   optimization: {
-    runtimeChunk: 'single',
+    runtimeChunk: "single",
   },
   module: {
     rules: [
@@ -26,31 +32,31 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env'],
+            presets: ["@babel/preset-env"],
           },
         },
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
       {
         test: /\.(csv|tsv)$/i,
-        use: ['csv-loader'],
+        use: ["csv-loader"],
       },
       {
         test: /\.xml$/i,
-        use: ['xml-loader'],
+        use: ["xml-loader"],
       },
     ],
   },
