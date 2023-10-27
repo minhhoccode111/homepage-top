@@ -2,17 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Hoang Minh's Personal Portfolio Website"
+    />
+    <link rel="icon" type="image/x-icon" href="./hoangminhbackend.ico" />
+    <link rel="icon" type="image/png" href="./hoangminhbackend.ico" />
     <title>Backend Dev | Hoang Minh</title>
     <link rel="stylesheet" href="./output.css" />
-  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+  <link rel="icon" href="hoangminhbackend.ico"><script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body>
-    <div id="wrapper" class="flex">
-      <header id="header" class="">
-        <img src="" alt="github" class="" data-github-icon />
+    <div id="wrapper" class="">
+      <!-- <img src="c150183b14873201a596.jpg" alt="" class="w-48" /> -->
+      <header
+        id="header"
+        class="flex items-center justify-between bg-darker p-4"
+      >
+        <h1
+          class="aspect-square transform-gpu animate-bounce cursor-pointer rounded-full bg-light p-2 text-xl font-bold uppercase text-darkest"
+        >
+          hm
+        </h1>
+        <nav class="">
+          <ul class="flex gap-2 text-base text-light">
+            <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
+              <a href="#about-me" class="underline hover:decoration-2"
+                >About me</a
+              >
+            </li>
+            <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
+              <a href="#my-work" class="underline hover:decoration-2"
+                >My work</a
+              >
+            </li>
+            <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
+              <a href="#contact-me" class="underline hover:decoration-2"
+                >Contact me</a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
-      <main id="main" class=""></main>
-      <footer id="footer" class="footer"></footer>
+      <main id="main" class="bg-light">
+        <section id="about-me" class="p-4">
+          <article id="banner" class="">
+            <div class="aspect-square">
+              <img
+                src="c150183b14873201a596.jpg"
+                alt=""
+                class="w-full object-contain object-top"
+              />
+            </div>
+
+            <h2 class="font-serif text-4xl capitalize text-dark drop-shadow-sm">
+              dang hoang minh
+            </h2>
+          </article>
+          <article id="about" class="">
+            <h2 class="text-center text-5xl text-darkest">About me</h2>
+            <div class="text-xl text-darker">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, ducimus? Ratione illum ut, unde quia laudantium
+              nihil minima placeat delectus nobis doloribus molestias
+              repudiandae ducimus incidunt! Voluptas odio corrupti hic.
+            </div>
+          </article>
+        </section>
+        <section id="my-work" class=""></section>
+      </main>
+      <footer id="footer" class="footer">
+        <section id="contact-me" class=""></section>
+      </footer>
     </div>
   </body>
 </html>

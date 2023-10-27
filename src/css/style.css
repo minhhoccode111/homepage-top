@@ -1,50 +1,6 @@
-:root {
-  font-size: 10px;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-* {
-  /* color: red; */
-}
-
-html {
-  /* background-color: black; */
-}
-
 body {
-  font-size: 2rem;
-  color: rgb(255, 0, 0);
-  font-weight: bolder;
+  height: 300vh;
 }
-
-a {
-  color: unset;
-  text-decoration: unset;
-}
-
-ul,
-li {
-  list-style-type: none;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-button {
-  border: unset;
-  cursor: pointer;
-}
-
 .center {
   display: flex;
   align-items: center;

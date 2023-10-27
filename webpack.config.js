@@ -15,13 +15,14 @@ module.exports = {
       title: "Backend Dev | Hoang Minh",
       filename: "index.html",
       template: "src/template.html",
-      // favicon: 'src/assets/icon/icon.png',
+      favicon: "src/assets/icon/hoangminhbackend.ico",
     }),
   ],
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     // clean: true,
+    assetModuleFilename: "assets/[hash][ext][query]",
   },
   optimization: {
     runtimeChunk: "single",
