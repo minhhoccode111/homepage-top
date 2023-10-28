@@ -14,3 +14,10 @@ body {
 p {
   padding: 0.4rem 0;
 }
+
+#banner {
+  justify-self: end;
+}
+#about {
+  justify-self: start;
+}
