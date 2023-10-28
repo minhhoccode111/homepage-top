@@ -16,11 +16,10 @@
     <link rel="stylesheet" href="./output.css" />
   <link rel="icon" href="hoangminhbackend.ico"><script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body>
-    <div id="wrapper" class="">
-      <!-- <img src="c150183b14873201a596.jpg" alt="" class="w-48" /> -->
+    <div id="wrapper" class="h-full bg-light">
       <header
         id="header"
-        class="flex items-center justify-between bg-darker p-4"
+        class="flex items-center justify-between bg-darker p-4 shadow-sm"
       >
         <h1
           class="aspect-square transform-gpu animate-bounce cursor-pointer rounded-full bg-light p-2 text-xl font-bold uppercase text-darkest"
@@ -30,51 +29,102 @@
         <nav class="">
           <ul class="flex gap-2 text-base text-light">
             <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
-              <a href="#about-me" class="underline hover:decoration-2"
+              <a
+                href="#about-me"
+                class="underline underline-offset-4 hover:decoration-2"
                 >About me</a
               >
             </li>
             <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
-              <a href="#my-work" class="underline hover:decoration-2"
+              <a
+                href="#my-work"
+                class="underline underline-offset-4 hover:decoration-2"
                 >My work</a
               >
             </li>
             <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
-              <a href="#contact-me" class="underline hover:decoration-2"
+              <a
+                href="#contact-me"
+                class="underline underline-offset-4 hover:decoration-2"
                 >Contact me</a
               >
             </li>
           </ul>
         </nav>
       </header>
-      <main id="main" class="bg-light">
-        <section id="about-me" class="p-4">
-          <article id="banner" class="">
-            <div class="aspect-square">
+      <main id="main" class="">
+        <section id="about-me" class="mt-6 p-4">
+          <article id="banner" class="mt-6">
+            <figure class="relative p-3">
+              <div
+                class="absolute left-0 right-0 top-0 flex h-full flex-col items-end justify-between text-4xl uppercase text-light"
+              >
+                <p class="pr-6 pt-6 font-sans font-extralight">hoang</p>
+                <p class="place-self-center pb-16 font-sans font-extralight">
+                  minh
+                </p>
+                <p class="place-self-center pt-16 font-serif font-extralight">
+                  backend
+                </p>
+                <p
+                  class="place-self-start pb-6 pl-6 font-serif font-extralight"
+                >
+                  dev
+                </p>
+              </div>
               <img
-                src="c150183b14873201a596.jpg"
+                src="assets/d19e0341fdf065420fe3.jpg"
                 alt=""
-                class="w-full object-contain object-top"
+                class="w-full rounded-lg shadow-md"
               />
-            </div>
 
-            <h2 class="font-serif text-4xl capitalize text-dark drop-shadow-sm">
-              dang hoang minh
-            </h2>
+              <figcaption class="text-center text-xs text-light"></figcaption>
+            </figure>
           </article>
-          <article id="about" class="">
-            <h2 class="text-center text-5xl text-darkest">About me</h2>
-            <div class="text-xl text-darker">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, ducimus? Ratione illum ut, unde quia laudantium
-              nihil minima placeat delectus nobis doloribus molestias
-              repudiandae ducimus incidunt! Voluptas odio corrupti hic.
+          <article id="about" class="mt-6 font-mono">
+            <h2 class="text-center text-4xl text-darkest">About me</h2>
+            <p class="text-xl text-darker">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+              sit cupiditate delectus libero in consequuntur officia saepe
+              accusantium repellendus non alias odit enim, voluptatem harum
+              tempore itaque, earum cumque exercitationem.
+            </p>
+            <div class="mt-4 flex items-center justify-center gap-4">
+              <a href="#" target="_blank" class="">
+                <img
+                  src="assets/7375df4841b630ab7b92.svg"
+                  alt=""
+                  class="w-10"
+                />
+              </a>
+              <a href="#" target="_blank" class="">
+                <img
+                  src="assets/62c2c9a56a864860c739.svg"
+                  alt=""
+                  class="w-10"
+                />
+              </a>
+              <a href="#" target="_blank" class="">
+                <img
+                  src="assets/67c1c09752012033d3db.svg"
+                  alt=""
+                  class="w-10"
+                />
+              </a>
             </div>
           </article>
         </section>
-        <section id="my-work" class=""></section>
+        <section id="my-work" class="mt-6">
+          <header class="">
+            <h2 class="text-center text-4xl text-darkest">My work</h2>
+          </header>
+          article.
+        </section>
       </main>
-      <footer id="footer" class="footer">
+      <footer
+        id="footer"
+        class="flex items-center justify-between bg-darker p-4 shadow-sm"
+      >
         <section id="contact-me" class=""></section>
       </footer>
     </div>
