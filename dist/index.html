@@ -52,7 +52,7 @@
           </ul>
         </nav>
       </header>
-      <main id="main" class="">
+      <main id="main" class="bg-light">
         <section id="about-me" class="mt-6 p-4">
           <article id="banner" class="mt-6">
             <figure class="relative p-3">
@@ -89,41 +89,246 @@
               accusantium repellendus non alias odit enim, voluptatem harum
               tempore itaque, earum cumque exercitationem.
             </p>
-            <div class="mt-4 flex items-center justify-center gap-4">
-              <a href="#" target="_blank" class="">
-                <img
-                  src="assets/7375df4841b630ab7b92.svg"
-                  alt=""
-                  class="w-10"
-                />
-              </a>
-              <a href="#" target="_blank" class="">
-                <img
-                  src="assets/62c2c9a56a864860c739.svg"
-                  alt=""
-                  class="w-10"
-                />
-              </a>
-              <a href="#" target="_blank" class="">
-                <img
-                  src="assets/67c1c09752012033d3db.svg"
-                  alt=""
-                  class="w-10"
-                />
-              </a>
-            </div>
+            <ul class="mt-4 flex items-center justify-center gap-4">
+              <li
+                class="transform-gpu duration-300 ease-in-out hover:scale-110"
+              >
+                <a href="#" target="_blank" class="">
+                  <img
+                    src="assets/7375df4841b630ab7b92.svg"
+                    alt=""
+                    class="w-10"
+                  />
+                </a>
+              </li>
+              <li
+                class="transform-gpu duration-300 ease-in-out hover:scale-110"
+              >
+                <a href="#" target="_blank" class="">
+                  <img
+                    src="assets/62c2c9a56a864860c739.svg"
+                    alt=""
+                    class="w-10"
+                  />
+                </a>
+              </li>
+              <li
+                class="transform-gpu duration-300 ease-in-out hover:scale-110"
+              >
+                <a href="#" target="_blank" class="">
+                  <img
+                    src="assets/67c1c09752012033d3db.svg"
+                    alt=""
+                    class="w-10"
+                  />
+                </a>
+              </li>
+            </ul>
           </article>
         </section>
-        <section id="my-work" class="mt-6">
+        <section id="my-work" class="mt-6 p-4">
           <header class="">
             <h2 class="text-center text-4xl text-darkest">My work</h2>
           </header>
-          article.
+          <div
+            class="grid justify-items-center gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
+          >
+            <!-- battleship -->
+            <article class="my-6 max-w-xs text-darkest shadow-md">
+              <div class="aspect-square bg-dark">
+                <img
+                  src="assets/fff65f8622d13bc88d06.png"
+                  alt=""
+                  class="object-contain object-center"
+                />
+              </div>
+              <div class="p-4">
+                <header
+                  class="ml-3 flex items-center justify-between text-2xl font-bold"
+                >
+                  <h3 class="capitalize">battleship</h3>
+                  <ul class="flex items-center gap-4">
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/7375df4841b630ab7b92.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/5892e9195b85be4f39fb.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </header>
+                <p class="">Battleship game playing with computer.</p>
+                <p class="">
+                  Setting board's size, number of ships, ship's length.
+                </p>
+                <p class="">
+                  Computer can play "smart" moves without "cheating"
+                </p>
+              </div>
+            </article>
+
+            <!-- checkmate -->
+            <article class="my-6 max-w-xs text-darkest shadow-md">
+              <div class="aspect-square bg-dark">
+                <img
+                  src="assets/4ed724af65a37925ee6c.png"
+                  alt=""
+                  class="object-contain object-center"
+                />
+              </div>
+              <div class="p-4">
+                <header
+                  class="ml-3 flex items-center justify-between text-2xl font-bold"
+                >
+                  <h3 class="capitalize">Checkmate</h3>
+                  <ul class="flex items-center gap-4">
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/7375df4841b630ab7b92.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/5892e9195b85be4f39fb.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </header>
+                <p class="">
+                  Checkmate todo list. Can add todos, notes, daily journal
+                  (auto). Can create new projects of todos/notes. Use
+                  localStorage as basic database.
+                </p>
+              </div>
+            </article>
+
+            <!-- weatherwise -->
+            <article class="my-6 max-w-xs text-darkest shadow-md">
+              <div class="aspect-square bg-dark">
+                <img
+                  src="assets/2b06286e3c1ccf595447.png"
+                  alt=""
+                  class="object-contain object-center"
+                />
+              </div>
+              <div class="p-4">
+                <header
+                  class="ml-3 flex items-center justify-between text-2xl font-bold"
+                >
+                  <h3 class="capitalize">Weatherwise</h3>
+                  <ul class="flex items-center gap-4">
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/7375df4841b630ab7b92.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/5892e9195b85be4f39fb.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </header>
+                <p class="">Weather app using weather API and Giphy API</p>
+                <p class="">Can switch between Celsius and Fahrenheit</p>
+              </div>
+            </article>
+
+            <!-- tasty -->
+            <article
+              class="my-6 max-w-xs justify-self-center text-darkest shadow-md"
+            >
+              <div class="aspect-square bg-dark">
+                <img
+                  src="assets/4f52fbaf95a55085f1b4.png"
+                  alt=""
+                  class="object-contain object-center"
+                />
+              </div>
+              <div class="p-4">
+                <header
+                  class="ml-3 flex items-center justify-between text-2xl font-bold"
+                >
+                  <h3 class="capitalize">Tasty</h3>
+                  <ul class="flex items-center gap-4">
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/7375df4841b630ab7b92.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+
+                    <li
+                      class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                    >
+                      <a href="#" class="">
+                        <img
+                          src="assets/5892e9195b85be4f39fb.svg"
+                          alt=""
+                          class="w-6"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </header>
+                <p class="">Restaurant Tasty</p>
+                <p class="">Can switch between light and dark theme</p>
+                <p class="">Content automatically generated using JavaScript</p>
+              </div>
+            </article>
+          </div>
         </section>
       </main>
       <footer
         id="footer"
-        class="flex items-center justify-between bg-darker p-4 shadow-sm"
+        class="mt-6 flex items-center justify-between bg-darker p-4 shadow-sm"
       >
         <section id="contact-me" class=""></section>
       </footer>
