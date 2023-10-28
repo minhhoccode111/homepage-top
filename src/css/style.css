@@ -10,3 +10,7 @@ body {
 .hide {
   display: none;
 }
+
+p {
+  padding: 0.4rem 0;
+}
