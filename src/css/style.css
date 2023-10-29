@@ -1,6 +1,3 @@
-body {
-  /* height: 300vh; */
-}
 .center {
   display: flex;
   align-items: center;
@@ -15,9 +12,40 @@ p {
   padding: 0.4rem 0;
 }
 
-#banner {
-  justify-self: end;
+[data-tasty-image] {
+  background: #9e7676 no-repeat center/cover
+    url("./../assets/img/tasty-dark.png");
 }
-#about {
-  justify-self: start;
+
+[data-battleship-image] {
+  background: #9e7676 no-repeat center/cover
+    url("./../assets/img/battleship-end.png");
+}
+
+[data-weatherwise-image] {
+  background: #9e7676 no-repeat center/cover
+    url("./../assets/img/weatherwise.png");
+}
+
+[data-checkmate-image] {
+  background: #9e7676 no-repeat center/cover
+    url("./../assets/img/checkmate-all.png");
+}
+
+@media (min-width: 640px) {
+  #banner {
+    justify-self: end;
+  }
+
+  #about {
+    justify-self: start;
+  }
+
+  li a img.w-10 {
+    width: 3.4rem;
+  }
+
+  article.max-w-md > div > header > ul > li > a > img {
+    width: 32px;
+  }
 }
