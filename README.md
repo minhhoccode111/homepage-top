@@ -1,42 +1,39 @@
 # Personal Portfolio
 
-My personal portfolio website
+The **Personal Portfolio** project is created according to the assignment from **The Odin Project** [lesson](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio)
+<br>
+<br>
 
-[This project requirements](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio)
+### 🔗 **Live preview** of the project is [here](https://minhhoccode111.github.io/personal-portfolio/).
 
-[Live demo](https://minhhoccode111.github.io/personal-portfolio/)
+## **Outcome**
 
-[All my projects' live demos](https://minhhoccode111.github.io/all-projects-live-demos/)
+- Used Webpack
+- Used NPM
+- Used Jest
+- Used Tailwindcss
 
-## What I've learned
+## **Getting Started**
 
-### Keep images' references between `html` files
+```
+HTTPS - git clone https://github.com/minhhoccode111/personal-portfolio.git
 
-When we generate a new `index.html` file in the `dist` directory base on the `template.html` file in the `src` directory using `html-webpack-plugin` and we want the reference of the images we use in `template.html` still work after generating `index.html` then we have to do like this:
+SSH - git clone git@github.com:minhhoccode111/personal-portfolio.git
 
-```html
-<!-- inside template.html file -->
-<img src="<%= require('./path/from/template.html/to/image.png') %>" />
-<!-- this image still work in index.html after generating -->
+cd personal-portfolio
+
+npm install
+
+npm start
 ```
 
-Configure in `webpack.config.js`
+## **Idea(s) to implement**
 
-```jsx
-// inside webpack.config.js
-module: {
-  rules: [
-    {
-      test: /\.(png|jpe?g|gif)$/i,
-      type: 'asset/resource',
-    },
-  ],
-},
-output: {
-  assetModuleFilename: 'assets/[hash][ext][query]',
-}
-```
+- Animations
+- Eye pleasing UI
 
-### Tailwindcss
+## **Navigation**
 
-There are some bugs that make the classes I add to the element don't work and I have to add styles manually in `style.css`. And that mean some tools are just not perfect and we have to check it manually (or maybe I'm just bad and missing something ☹️)
+- See my previous project [Battleship](https://github.com/minhhoccode111/battleship-top)
+- See my next project [CV Application](https://github.com/minhhoccode111/cv-application-top)
+- See all my projects' live demos [This link](https://github.com/minhhoccode111/all-projects-live-demos)
