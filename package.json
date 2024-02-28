@@ -1,5 +1,5 @@
 {
-  "name": "webpack-project",
+  "name": "homepage-top",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,7 +31,7 @@
     "testWatch": "jest --watch",
     "watch": "webpack --progress --watch",
     "serve": "webpack-dev-server --open",
-    "start": "webpack serve --open",
+    "start": "webpack serve --open && bunx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "gh-pages": "git subtree push --prefix dist origin gh-pages"
   }
 }

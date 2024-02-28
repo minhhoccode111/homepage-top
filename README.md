@@ -1,10 +1,10 @@
-# Personal Portfolio
+# Homepage TOP
 
-The **Personal Portfolio** project is created according to the assignment from **The Odin Project** [lesson](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio)
+The **Homepage TOP** project is created according to the assignment from **The Odin Project** [lesson](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio/)
 <br>
 <br>
 
-### 🔗 **Live preview** of the project is [here](https://minhhoccode111.github.io/personal-portfolio/).
+### 🔗 **Live preview** of the project is [here](https://minhhoccode111.github.io/homepage-top/).
 
 ## **Outcome**
 
@@ -16,11 +16,11 @@ The **Personal Portfolio** project is created according to the assignment from *
 ## **Getting Started**
 
 ```
-HTTPS - git clone https://github.com/minhhoccode111/personal-portfolio.git
+HTTPS - git clone https://github.com/minhhoccode111/homepage-top.git
 
-SSH - git clone git@github.com:minhhoccode111/personal-portfolio.git
+SSH - git clone git@github.com:minhhoccode111/homepage-top.git
 
-cd personal-portfolio
+cd homepage-top
 
 npm install
 
