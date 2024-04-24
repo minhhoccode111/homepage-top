@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "script": {
-    "test": "jest"
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "testWatch": "jest --watch",
+    "watch": "webpack --progress --watch",
+    "serve": "webpack-dev-server --open",
+    "start": "webpack serve --open && bunx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
@@ -24,14 +30,5 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "scripts": {
-    "test": "jest",
-    "build": "webpack",
-    "testWatch": "jest --watch",
-    "watch": "webpack --progress --watch",
-    "serve": "webpack-dev-server --open",
-    "start": "webpack serve --open && bunx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   }
 }
