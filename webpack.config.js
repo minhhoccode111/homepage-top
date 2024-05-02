@@ -12,10 +12,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Backend Dev | Hoang Minh",
+      title: "Web Dev | minhhoccode",
       filename: "index.html",
       template: "src/template.html",
-      favicon: "src/assets/icon/hoangminhbackend.ico",
+      // favicon: "src/assets/icon/hoangminhbackend.ico",
     }),
   ],
   output: {
