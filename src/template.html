@@ -10,22 +10,22 @@
     <!-- <link rel="icon" type="image/x-icon" href="./hoangminhbackend.ico" /> -->
     <!-- <link rel="icon" type="image/png" href="./hoangminhbackend.ico" /> -->
     <title>Web Dev | Hoang Minh</title>
-    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="./output.css" /> -->
   </head>
   <body>
-    <div id="wrapper" class="h-full bg-light">
+    <div id="wrapper" class="bg-gray-100 h-full">
       <header
         id="header"
-        class="flex items-center justify-between bg-darker p-4 shadow-lg sm:p-6"
+        class="bg-gray-800 flex items-center justify-between p-4 shadow-lg sm:p-6"
       >
         <h1
-          class="aspect-square transform-gpu animate-bounce cursor-pointer rounded-full bg-light p-2 text-xl font-bold uppercase text-darkest sm:p-3 sm:text-2xl"
+          class="bg-gray-100 text-gray-900 aspect-square transform-gpu animate-bounce cursor-pointer rounded-full p-2 text-xl font-bold uppercase sm:p-3 sm:text-2xl"
         >
           hm
         </h1>
         <nav class="">
           <ul
-            class="flex gap-3 whitespace-nowrap text-base text-light sm:gap-10 sm:text-lg md:gap-16"
+            class="text-gray-200 flex gap-3 whitespace-nowrap text-base sm:gap-10 sm:text-lg md:gap-16"
           >
             <li class="transform-gpu duration-300 ease-in-out hover:scale-110">
               <a
@@ -51,7 +51,7 @@
           </ul>
         </nav>
       </header>
-      <main id="main" class="bg-light">
+      <main id="main" class="bg-gray-100">
         <section
           id="about-me"
           class="mt-6 grid grid-cols-1 justify-items-center p-4 sm:grid-cols-2"
@@ -59,14 +59,14 @@
           <article id="banner" class="max-w-sm justify-self-center">
             <figure class="relative p-3">
               <div
-                class="absolute left-0 right-0 top-0 flex h-full flex-col items-end justify-between text-4xl uppercase text-light sm:text-6xl"
+                class="text-gray-200 absolute left-0 right-0 top-0 flex h-full flex-col items-end justify-between text-4xl uppercase sm:text-6xl"
               >
                 <p class="pr-6 pt-6 font-sans font-extralight">hoang</p>
                 <p class="place-self-center pb-16 font-sans font-extralight">
                   minh
                 </p>
                 <p class="place-self-center pt-16 font-serif font-extralight">
-                  backend
+                  Web
                 </p>
                 <p
                   class="place-self-start pb-6 pl-6 font-serif font-extralight"
@@ -79,16 +79,18 @@
                 alt=""
                 class="w-full rounded-lg shadow-md"
               />
-              <figcaption class="text-center text-xs text-light"></figcaption>
+              <figcaption
+                class="text-gray-200 text-center text-xs"
+              ></figcaption>
             </figure>
           </article>
           <article id="about" class="max-w-sm justify-self-center font-mono">
             <h2
-              class="p-4 text-center text-4xl text-darkest sm:text-left md:my-2 md:text-5xl"
+              class="text-gray-900 p-4 text-center text-4xl sm:text-left md:my-2 md:text-5xl"
             >
               About me
             </h2>
-            <div class="text-xl text-darker">
+            <div class="text-gray-800 text-xl">
               <p class="">Hello, World!</p>
               <p class="">I'm Minh.</p>
               <p class="">
@@ -158,7 +160,7 @@
         <section id="my-work" class="mt-6 p-4">
           <header class="">
             <h2
-              class="p-4 text-center text-4xl text-darkest sm:text-left md:my-2 md:text-5xl"
+              class="text-gray-900 p-4 text-center text-4xl sm:text-left md:my-2 md:text-5xl"
             >
               My work
             </h2>
@@ -167,8 +169,8 @@
             class="grid justify-items-center gap-4 sm:grid-cols-2 xl:grid-cols-4"
           >
             <!-- battleship -->
-            <article class="my-6 max-w-md text-darkest shadow-md">
-              <div class="aspect-square bg-dark" data-battleship-image>
+            <article class="text-gray-900 my-6 max-w-md shadow-md">
+              <div class="bg-gray-700 aspect-square" data-battleship-image>
                 <!-- <img
                   src="<%=require('./assets/img/battleship-end.png')%>"
                   alt=""
@@ -225,8 +227,8 @@
             </article>
 
             <!-- checkmate -->
-            <article class="my-6 max-w-md text-darkest shadow-md">
-              <div class="aspect-square bg-dark" data-checkmate-image>
+            <article class="text-gray-900 my-6 max-w-md shadow-md">
+              <div class="bg-gray-700 aspect-square" data-checkmate-image>
                 <!-- <img
                   src="<%=require('./assets/img/checkmate-all.png')%>"
                   alt=""
@@ -283,8 +285,8 @@
             </article>
 
             <!-- weatherwise -->
-            <article class="my-6 max-w-md text-darkest shadow-md">
-              <div class="aspect-square bg-dark" data-weatherwise-image>
+            <article class="text-gray-900 my-6 max-w-md shadow-md">
+              <div class="bg-gray-700 aspect-square" data-weatherwise-image>
                 <!-- <img
                   src="<%=require('./assets/img/weatherwise.png')%>"
                   alt=""
@@ -341,8 +343,8 @@
             </article>
 
             <!-- tasty -->
-            <article class="my-6 max-w-md text-darkest shadow-md">
-              <div class="aspect-square bg-dark" data-tasty-image>
+            <article class="text-gray-900 my-6 max-w-md shadow-md">
+              <div class="bg-gray-700 aspect-square" data-tasty-image>
                 <!-- <img
                   src="<%=require('./assets/img/tasty-dark.png')%>"
                   alt=""
@@ -398,26 +400,25 @@
             </article>
           </div>
         </section>
-        <section id="contact-me" class="mt-6 bg-darker p-4 text-light">
-          <header class="">
-            <h2
-              class="p-4 text-center text-4xl sm:text-left md:my-2 md:text-5xl"
-            >
+        <section id="contact-me" class="bg-gray-800 text-gray-200 mt-6 p-4">
+          <header class="mx-auto max-w-[65ch]">
+            <h2 class="text-4xl sm:text-left md:my-2 md:text-5xl">
               Contact me
             </h2>
+
+            <div class="p-4 text-xl">
+              <p class="">I am currently looking for full-time employment.</p>
+              <p class="">
+                Please get in touch if you think our work could be mutually
+                beneficial!
+              </p>
+            </div>
           </header>
-          <div class="text-xl">
-            <p class="">I'm currently looking for an Internship.</p>
-            <p class="">
-              Please get in touch if you think our work could be mutually
-              beneficial!
-            </p>
-            <p class="">minhhoccode111@gmail.com</p>
-          </div>
+
           <div class="">
             <ul class="mt-4 flex items-center justify-center gap-4">
               <li
-                class="transform-gpu duration-300 ease-in-out hover:scale-110"
+                class="transform-gpu rounded-full duration-300 ease-in-out hover:scale-110"
               >
                 <a
                   target="_blank"
@@ -468,7 +469,7 @@
           </div>
         </section>
       </main>
-      <footer id="footer" class="bg-darker p-4 pt-10 text-light shadow-sm">
+      <footer id="footer" class="bg-gray-800 text-gray-200 p-4 pt-10 shadow-sm">
         <p class="text-center sm:text-lg">
           <a
             target="_blank"
